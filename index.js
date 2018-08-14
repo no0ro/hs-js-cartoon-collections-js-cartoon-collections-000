@@ -30,9 +30,12 @@ function longPlaneteerCalls(words) {
   function checkLength (word){
     return word.length > 4
   }
-return words.every(checkLength); 
-//need a small word situation
-}*/
+return words.some(checkLength); 
+}
+
+//switched from .every() to .some() and finally worked!
+
+*/
 
 
 function findTheCheese (foods) {
