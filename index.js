@@ -34,4 +34,17 @@ return words.every(checkLength);
 
 
 function findTheCheese (foods) {
-}
+  let findCheese = ['cheddar','gouda','camembert'];
+  let foundCheese = [];
+  for (let i=0; i<findCheese.length; i++){
+    for (let j=0; j<foods.length; j++){
+      if (findCheese[i]===foods[j]){
+        return findCheese[i];
+      }
+    }
+    if (findCheese !== foods){
+        return 'no cheese!'
+      }
+    }
+  }
+
